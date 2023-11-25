@@ -1,9 +1,7 @@
 <template>
-    <div class="containerIndex">
-        Index
-    </div>
+  <div class="containerIndex">
+    <Ticket />
+  </div>
 </template>
-<style src="@/pages/pagesStyle/index/index.css" scoped>
-</style>
-<script>
-</script>
+<style src="@/pages/pagesStyle/index/index.css" scoped></style>
+<script></script>

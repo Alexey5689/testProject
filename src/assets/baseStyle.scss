@@ -1,13 +1,5 @@
-@font-face {
-    font-family: Monserrat;
-    src: url('../public/fonts/Montserrat-Regular.ttf');
-}
-@font-face {
-    font-family: Monserrat_Bold;
-    src: url('../public/fonts/Montserrat-Bold.ttf');
-}
-
-
-$fontTextReg:Monserrat_Reg;
-$fontTextBold:Monserrat_Bold;
-$bgPages:#F0F1F3;
+$fontTextReg: Monserrat_Reg;
+$fontTextBold: Monserrat_Bold;
+$bgPages: #f0f1f3;
+$bgHeader: #0095ff;
+$colText: #f0f1f3;

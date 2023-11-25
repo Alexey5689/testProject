@@ -1,15 +1,7 @@
-@font-face {
-  font-family: Monserrat;
-  src: url("../public/fonts/Montserrat-Regular.ttf");
-}
-@font-face {
-  font-family: Monserrat_Bold;
-  src: url("../public/fonts/Montserrat-Bold.ttf");
-}
 .containerLogin {
   width: 100vw;
   height: calc(100vh - 50px);
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

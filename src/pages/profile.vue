@@ -1,10 +1,7 @@
 <template>
-    <div class="containerProfile">
-        Profile
-    </div>
+  <div class="containerProfile">
+    <Profile />
+  </div>
 </template>
-<script>
-</script>
-<style src="@/pages/pagesStyle/profile/profile.css" scoped>
-</style>
-
+<script></script>
+<style src="@/pages/pagesStyle/profile/profile.css" scoped></style>
