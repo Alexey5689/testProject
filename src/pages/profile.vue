@@ -1,7 +1,10 @@
 <template>
-
+    <div class="containerProfile">
+        Profile
+    </div>
 </template>
-<style src="@/pages/pagesStyle/profile/pprofile.css" scoped>
-</style>
 <script>
 </script>
+<style src="@/pages/pagesStyle/profile/profile.css" scoped>
+</style>
+

@@ -1,0 +1,9 @@
+@import'../../../assets/baseStyle.scss';
+.containerLogin{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color:$bgPages;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
