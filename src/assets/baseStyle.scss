@@ -1,5 +1,14 @@
 $fontTextReg: Monserrat_Reg;
 $fontTextBold: Monserrat_Bold;
+
+$userIcon: url("@/assets/icons/user-icon.svg");
+$showIcon: url("@/assets/icons/bx-show.svg");
+$hiddenIcon: url("@/assets/icons/bx-low-vision.svg");
+$passwordIcon: url("@/assets/icons/blocked-icon.svg");
+
 $bgPages: #f0f1f3;
 $bgHeader: #0095ff;
 $colText: #f0f1f3;
+$fontColorRuls: #ff2400;
+$bgInput: #f0f1f3;
+$bgButton: $bgHeader;
