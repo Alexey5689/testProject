@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 export const testProfile = defineStore("profile", {
   state: () => ({
+    response: "",
     firstName: "",
     lastName: "",
     birthDay: "",
@@ -1142,6 +1143,9 @@ export const testProfile = defineStore("profile", {
     getCityListVisible() {
       return this.cityListVisible;
     },
+    getShowResponse() {
+      return this.response;
+    },
   },
   persist: {
     enabled: true,
@@ -1179,7 +1183,19 @@ export const testProfile = defineStore("profile", {
       this.cityListVisible = false;
     },
     safe() {
-      this.isSafe = true;
+      if (
+        this.firstName === "" ||
+        this.lastName === "" ||
+        this.searchTown === "" ||
+        this.birthDay === ""
+      ) {
+        this.response = "Поля должны быть заполнены";
+        setTimeout(() => {
+          this.response = "";
+        }, 2000);
+      } else {
+        this.isSafe = true;
+      }
     },
     redaction() {
       this.isSafe = false;

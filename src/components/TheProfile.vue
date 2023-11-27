@@ -2,7 +2,7 @@
   <div class="profileWrapper">
     <div v-if="profile.isSafe" class="profile">
       <div class="profile_Head">
-        <h1>Profile</h1>
+        <h2>Profile</h2>
       </div>
       <div class="profileInfo">
         <div class="profInputRedaction">
@@ -27,7 +27,10 @@
 
     <div v-else class="profile">
       <div class="profile_Head">
-        <h1>Profile</h1>
+        <h2>Profile</h2>
+      </div>
+      <div class="ruls">
+        <p>{{ profile.getShowResponse }}</p>
       </div>
       <div class="profileInfo">
         <input

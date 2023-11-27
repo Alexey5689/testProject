@@ -38,10 +38,15 @@
           flex-direction: column;
   text-align: start;
 }
-.profileWrapper .profile .profile_Head h1 {
+.profileWrapper .profile .profile_Head h2 {
   font-family: Monserrat_Bold;
   font-size: 32px;
   line-height: 120%;
+}
+.profileWrapper .profile .ruls {
+  text-align: start;
+  color: #ff2400;
+  font-family: Monserrat_Reg;
 }
 .profileWrapper .profile .profileInfo {
   display: -webkit-box;

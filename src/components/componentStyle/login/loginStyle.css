@@ -38,7 +38,7 @@
           flex-direction: column;
   text-align: center;
 }
-.loginWrapper .login .login_Head h1 {
+.loginWrapper .login .login_Head h2 {
   font-family: Monserrat_Bold;
   font-size: 32px;
   line-height: 120%;

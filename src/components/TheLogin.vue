@@ -2,7 +2,7 @@
   <div class="loginWrapper">
     <div v-if="!test.getLogin" class="login">
       <div class="login_Head">
-        <h1>Вход</h1>
+        <h2>Вход</h2>
       </div>
       <div class="ruls">
         <p>{{ test.getShowResponse }}</p>
