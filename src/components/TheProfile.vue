@@ -1,6 +1,31 @@
 <template>
   <div class="profileWrapper">
-    <div class="profile">
+    <div v-if="profile.isSafe" class="profile">
+      <div class="profile_Head">
+        <h1>Profile</h1>
+      </div>
+      <div class="profileInfo">
+        <div class="profInputRedaction">
+          Имя:<span>{{ profile.firstName }}</span>
+        </div>
+        <div class="profInputRedaction">
+          Фамилия:<span>{{ profile.lastName }}</span>
+        </div>
+        <div class="profInputRedaction">
+          Дата рождения:<span>{{ profile.getBirthDay }}</span>
+        </div>
+        <div class="profInputRedaction">
+          Город:<span>{{ profile.searchTown }}</span>
+        </div>
+      </div>
+      <div class="profile_Button">
+        <div class="profile_Btn">
+          <button @click="profile.redaction">Редактировать</button>
+        </div>
+      </div>
+    </div>
+
+    <div v-else class="profile">
       <div class="profile_Head">
         <h1>Profile</h1>
       </div>
@@ -10,16 +35,18 @@
           placeholder="Имя*"
           autocomplete="off"
           class="profInput"
+          v-model="profile.firstName"
         />
         <input
           type="text"
           placeholder="Фамилия*"
           autocomplete="off"
           class="profInput"
+          v-model="profile.lastName"
         />
         <Calendar
           :class="$style.input"
-          v-model="profile.birthday"
+          v-model="profile.birthDay"
           dateFormat="dd.mm.yy"
           placeholder="Дата рождения*"
         />
@@ -37,7 +64,7 @@
       </div>
       <div class="profile_Button">
         <div class="profile_Btn">
-          <button>Сохранить</button>
+          <button @click="profile.safe">Сохранить</button>
         </div>
       </div>
     </div>
@@ -47,6 +74,7 @@
 import { testProfile } from "@/stores/profile";
 export default {
   name: "Profile",
+
   setup() {
     const profile = testProfile();
     return {

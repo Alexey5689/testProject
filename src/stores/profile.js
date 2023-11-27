@@ -3,7 +3,7 @@ export const testProfile = defineStore("profile", {
   state: () => ({
     firstName: "",
     lastName: "",
-    birthday: "",
+    birthDay: "",
     searchTown: "",
     isSafe: false,
     cityListVisible: true,
@@ -1136,6 +1136,9 @@ export const testProfile = defineStore("profile", {
         return elem.name.toLowerCase().includes(this.searchTown.toLowerCase());
       });
     },
+    getBirthDay() {
+      return new Date(this.birthDay).toLocaleDateString();
+    },
     getCityListVisible() {
       return this.cityListVisible;
     },
@@ -1156,12 +1159,17 @@ export const testProfile = defineStore("profile", {
       {
         key: "birthday",
         storage: localStorage,
-        paths: ["birthday"],
+        paths: ["birthDay"],
       },
       {
         key: "city",
         storage: localStorage,
         paths: ["searchTown"],
+      },
+      {
+        key: "safe/redaction",
+        storage: localStorage,
+        paths: ["isSafe"],
       },
     ],
   },
@@ -1170,8 +1178,11 @@ export const testProfile = defineStore("profile", {
       this.searchTown = city.name;
       this.cityListVisible = false;
     },
-    changCityList() {
-      this.cityListVisible = !this.cityListVisible;
+    safe() {
+      this.isSafe = true;
+    },
+    redaction() {
+      this.isSafe = false;
     },
   },
 });
