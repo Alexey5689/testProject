@@ -1,5 +1,5 @@
 <template>
-  <div>Tiket</div>
+  <div>Ticket</div>
 </template>
 <script>
 export default {

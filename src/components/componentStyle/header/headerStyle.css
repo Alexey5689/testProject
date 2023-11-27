@@ -41,7 +41,7 @@
   font-family: Monserrat_Bold;
   text-align: center;
   font-weight: 700;
-  font-size: 1.3vw;
+  font-size: 28px;
   color: #f0f1f3;
 }
 .containerHeader nav .right {
@@ -78,7 +78,7 @@
           justify-content: center;
   font-family: Monserrat_Bold;
   font-weight: 700;
-  font-size: 1.3vw;
+  font-size: 20px;
 }
 .containerHeader nav .right ul li a {
   text-decoration: none;

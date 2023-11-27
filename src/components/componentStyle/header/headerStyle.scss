@@ -21,7 +21,7 @@
         font-family: $fontTextBold;
         text-align: center;
         font-weight: 700;
-        font-size: 1.3vw;
+        font-size: 28px;
         color: $colText;
       }
     }
@@ -42,7 +42,7 @@
           justify-content: center;
           font-family: $fontTextBold;
           font-weight: 700;
-          font-size: 1.3vw;
+          font-size: 20px;
           a {
             text-decoration: none;
             color: $colText;
@@ -51,50 +51,4 @@
       }
     }
   }
-  //   .left {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     width: 50%;
-  //     .logo {
-  //       width: auto;
-  //       font-family: $fontTextBold;
-  //       font-weight: 700;
-  //       font-size: x-large;
-  //       color: $colText;
-  //     }
-  //   }
-  //   .right {
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: center;
-  //     width: 50%;
-  //     nav {
-  //       display: flex;
-  //       justify-self: center;
-  //       width: 50%;
-  //       ul {
-  //         display: flex;
-  //         flex-direction: row;
-  //         align-items: center;
-  //         justify-content: space-around;
-  //         width: 100%;
-  //         height: 100%;
-  //         li {
-  //           width: 33.3%;
-  //           display: flex;
-  //           justify-content: center;
-  //           font-family: $fontTextBold;
-  //           font-weight: 700;
-  //           font-size: x-large;
-
-  //           a {
-  //             text-decoration: none;
-  //             color: $colText;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
 }

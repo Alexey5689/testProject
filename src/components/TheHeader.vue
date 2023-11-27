@@ -5,7 +5,7 @@
       <div class="right">
         <ul>
           <li>
-            <RouterLink to="/">Main</RouterLink>
+            <RouterLink to="/">Ticket</RouterLink>
           </li>
           <li>
             <RouterLink to="/login">Login</RouterLink>

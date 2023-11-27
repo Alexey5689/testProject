@@ -44,10 +44,9 @@
         </div>
       </form>
     </div>
-
     <div v-else class="login">
       <div class="login_Head">
-        <h1>Вход</h1>
+        <h1>Выход</h1>
       </div>
       <div class="login_Button">
         <form @submit.prevent="test.LogOutForm" class="login_form">
