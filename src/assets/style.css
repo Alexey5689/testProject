@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 *::after {
   margin: 0;
@@ -15,4 +16,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Monserrat_Reg;
+  src: url("../assets/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Monserrat_Bold;
+  src: url("../assets/Montserrat/Montserrat-Bold.ttf");
 }

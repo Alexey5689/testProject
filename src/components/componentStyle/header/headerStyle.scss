@@ -1,0 +1,54 @@
+@import "../../../assets/baseStyle.scss";
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  background: $bgHeader;
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    .left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      .logo {
+        width: 33.3%;
+        font-family: $fontTextBold;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        color: $colText;
+      }
+    }
+    .right {
+      display: flex;
+      width: 50%;
+      height: 100%;
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        li {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          font-family: $fontTextBold;
+          font-weight: 700;
+          font-size: 20px;
+          a {
+            text-decoration: none;
+            color: $colText;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,6 @@
-<script>
-</script>
+<script></script>
 <template>
-  <router-view>
-  </router-view>
+  <Header />
+  <router-view> </router-view>
 </template>
-<style  src="@/assets/style.css">
-</style>
+<style scoped></style>

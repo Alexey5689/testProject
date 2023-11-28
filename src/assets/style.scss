@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   // overflow-x:hidden;
+=======
+  overflow-x: hidden;
+>>>>>>> components
   &::after {
     margin: 0;
     padding: 0;
@@ -13,4 +17,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+<<<<<<< HEAD
+=======
+}
+@font-face {
+  font-family: Monserrat_Reg;
+  src: url("../assets/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Monserrat_Bold;
+  src: url("../assets/Montserrat/Montserrat-Bold.ttf");
+>>>>>>> components
 }
