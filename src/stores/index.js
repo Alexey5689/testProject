@@ -40,7 +40,7 @@ export const testProject = defineStore("test", {
           this.user = "";
           this.password = "";
         }, 2000);
-      } else if (this.user !== "admin" || this.password !== "admin") {
+      } else if (this.user !== "ADMIN" || this.password !== "ADMIN") {
         this.response = "Неверный логин или пароль";
         setTimeout(() => {
           this.response = "";
