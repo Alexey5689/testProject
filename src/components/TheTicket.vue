@@ -20,6 +20,27 @@
       </div>
     </form>
   </div>
+  <div class="ticket" v-if="ticket.tasks.length">
+    <div class="ticketList">
+      <div
+        class="ticketContent"
+        v-for="(task, index) in ticket.tasks"
+        :key="index"
+      >
+        <div class="name">
+          <span>Содержание:</span>
+          <div>{{ task.nameTask }}</div>
+        </div>
+        <div class="content">
+          <span>Описание:</span>
+          <div>{{ task.contentTask }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="tiket_create">
+      <button @click="ticket.clearTickets">Очистить</button>
+    </div>
+  </div>
 </template>
 <script>
 import { testTicket } from "@/stores/ticket";

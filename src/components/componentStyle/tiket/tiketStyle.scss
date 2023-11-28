@@ -6,6 +6,7 @@
   border-radius: 24px;
   padding: 42px 32px;
   display: flex;
+  margin-right: 20px;
   flex-direction: column;
   gap: 10px;
   .ruls {
@@ -92,5 +93,89 @@
         cursor: pointer;
       }
     }
+  }
+}
+.ticket {
+  display: flex;
+  width: 366px;
+  height: 270px;
+  padding: 16px 4px 16px 16px;
+  flex-direction: column;
+  margin-top: 2px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  border: 2px solid #dbdee4;
+  background: #fff;
+  .tiket_create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 47px;
+    margin-top: 10px;
+    button {
+      width: inherit;
+      height: 100%;
+      background-color: $bgButton;
+      color: $colText;
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+  }
+  .ticketList {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 3px;
+    .ticketContent {
+      width: 100%;
+      min-height: 100px;
+      max-height: fit-content;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      font-family: $fontTextReg;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: #919399;
+      border-radius: 10px;
+      border: 2px solid #dbdee4;
+      overflow-y: hidden;
+      span {
+        font-weight: bold;
+      }
+      .name {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .ticketList::-webkit-scrollbar {
+    width: 10px;
+  }
+  .ticketList::-webkit-scrollbar-track {
+    background: rgba(240, 241, 243, 1);
+    border-radius: 8px;
+  }
+  .ticketList::-webkit-scrollbar-thumb {
+    background: rgb(123, 124, 130);
+    border-radius: 8px;
+    border: 3px solid rgba(240, 241, 243, 1);
   }
 }

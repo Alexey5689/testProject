@@ -6,6 +6,7 @@ export const routes = [
     name: "Index",
     path: "/",
     component: index,
+    meta: { auth: true },
   },
   {
     name: "Login",
@@ -16,5 +17,6 @@ export const routes = [
     name: "Profile",
     path: "/profile",
     component: profile,
+    meta: { auth: true },
   },
 ];

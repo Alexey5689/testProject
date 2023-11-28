@@ -38,5 +38,8 @@ export const testTicket = defineStore("ticket", {
         this.taskContent = "";
       }
     },
+    clearTickets() {
+      this.tasks = [];
+    },
   },
 });
