@@ -67,7 +67,7 @@
       </div>
       <div class="profile_Button">
         <div class="profile_Btn">
-          <button @click="profile.safe">Сохранить</button>
+          <button @click="profile.save">Сохранить</button>
         </div>
       </div>
     </div>

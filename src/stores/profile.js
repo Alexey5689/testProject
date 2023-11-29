@@ -1182,7 +1182,7 @@ export const testProfile = defineStore("profile", {
       this.searchTown = city.name;
       this.cityListVisible = false;
     },
-    safe() {
+    save() {
       if (
         this.firstName === "" ||
         this.lastName === "" ||
